@@ -1,0 +1,238 @@
+.registration-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .left-link {
+    position: fixed;
+    left: 0; /* Keep it on the left edge of the screen */
+    top: 05%; /* Center it vertically (adjust if needed) */
+    transform: translateY(-50%); /* Perfect centering */
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: 350px;
+    margin: 0 auto; /* Centers the search bar horizontally */
+  }
+/* ------------------------------------------------ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  justify-content: center; 
+  top: 1;
+  left: 0;
+  width: 200px; /* Width of the nav bar */
+  height: 60%; /* Full height */
+  background-color: #687a82; /* Background color of the nav */
+  padding-top: 20px; /* Padding to move the links down a bit */
+  margin-top:130px;
+}
+
+.container {
+  display: grid; /* Use CSS grid layout */
+  grid-template-columns: 95% 5%; /* Divide into two equal columns */
+  width: 100%;
+  height: 100vh;
+}
+
+.left, .right {
+  padding: 20px;
+}
+
+.left {
+  background-color: #f1f1f1;
+}
+
+.right {
+  background-color: #f1f1f1;
+  color: white;
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none; /* Removes underline */
+  font-size: 18px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #575757; /* Darken the background on hover */
+}
+
+/* Optional: Add a margin to the content so it's not hidden behind the nav */
+.content {
+  margin-left: 220px; /* This should be greater than the navbar width */
+  padding: 20px;
+}
+
+
+
+/* -------------------------------------------   */
+
+  .search-input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex: 1; /* Makes the input take up all available space */
+    border-radius: 45px;
+    font-size: 16px;
+  }
+
+  .search-button:hover {
+    background-color: #228425;
+  }
+
+  .search-button:focus {
+    outline: none; /* Removes the default focus outline */
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-row {
+    display: flex;
+    gap: 20px; /* Space between the checkboxes */
+    align-items: center; /* Align checkboxes and labels */
+  }
+  
+  .checkbox-row div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-row label {
+    margin-left: 5px; /* Space between checkbox and label */
+  }
+  
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    color: red;
+  }
+  /* --------------------------
+  /* Style for the Popup Background */
+.popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Make sure it appears on top of other content */
+}
+
+/* Style for the Popup Content */
+.popup-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.success {
+  border-left: 5px solid green;
+}
+
+.failure {
+  border-left: 5px solid red;
+}
+
+/* Close Button Style */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* App.css */
+.no-bullets {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Optional: Removes the left padding */
+}
+
+.no-bullets li {
+  margin-bottom: 8px; /* Optional: Adds space between list items */
+}
+
+   /* */ 
+  
