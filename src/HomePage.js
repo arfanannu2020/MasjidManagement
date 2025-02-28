@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Payment from './Payment';
-import IncomeToMasjid from './IncomeToMasjid';
 import './Registration.css';
-import Registration from './Registration';
 
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState('');

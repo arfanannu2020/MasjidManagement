@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Registration from './Registration';
 import { Routes, Route } from 'react-router-dom';  // Import Routes and Route

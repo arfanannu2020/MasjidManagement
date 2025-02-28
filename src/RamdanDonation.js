@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import home from './HomePage';
 import { Link } from 'react-router-dom';
 
 const RamdanDonation = () => {
@@ -70,7 +68,7 @@ const RamdanDonation = () => {
           // const textResponse = await response.text();
           // console.log(textResponse);
             // const result = await response.json();
-            const result = await response.json();  
+            const results = await response.json();  
             console.log('Server data:', result); 
             // setMembers(result);
             // console.log('Server response:', result);

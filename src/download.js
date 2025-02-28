@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { jsPDF } from 'jspdf';
 
 const DownloadButton = () => {
     const handleDownload = async () => {

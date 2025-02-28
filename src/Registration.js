@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
-import home from './HomePage';
 
 const Registration = () => {
 
