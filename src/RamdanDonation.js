@@ -69,7 +69,7 @@ const RamdanDonation = () => {
           // console.log(textResponse);
             // const result = await response.json();
             const results = await response.json();  
-            console.log('Server data:', result); 
+            console.log('Server data:', results); 
             // setMembers(result);
             // console.log('Server response:', result);
         }
