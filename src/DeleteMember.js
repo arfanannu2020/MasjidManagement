@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const DeleteMember = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -16,7 +16,7 @@ const DeleteMember = () => {
     const [loading, setLoading] = useState(false);
       const [error, setError] = useState('');
       const [response,setResponse] = useState('');
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   // State to hold form data
 //   const [formData, setFormData] = useState({
 //     memberName: '',
@@ -55,7 +55,7 @@ const DeleteMember = () => {
         // });
 
        // Store the members found
-      if(data.length==0){
+      if(data.length===0){
         setError('Member Not Exists');
       }
       else{
@@ -162,8 +162,9 @@ const DeleteMember = () => {
                 <p>Old donation balance: {member.old_donation_balance}</p>
               </li>
             ))}
+            {response}
           </ul>
-        ):(<></>)}
+        ):(<>{loading}</>)}
     </div><br/>
     <div>
     <button onClick={handleDelete}>Delete</button>

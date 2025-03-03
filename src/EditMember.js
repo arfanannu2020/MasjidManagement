@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const EditMember = () => {
     const [searchQuery, setSearchQuery] = useState('');
+    // const [loading, setLoading] = useState(false);
       const [members, setMembers] = useState({
         memberName: '',
         member_address: '',
@@ -12,10 +13,9 @@ const EditMember = () => {
         fixed_monthly_donation: '',
         old_donation_balance: '',
       });
-    const [loading, setLoading] = useState(false);
       const [error, setError] = useState('');
 
-    const navigate = useNavigate();
+
   // State to hold form data
 //   const [formData, setFormData] = useState({
 //     memberName: '',
@@ -47,7 +47,7 @@ const EditMember = () => {
       return;
     }
 
-    setLoading(true);
+    // setLoading(true);
     try {
       const response = await fetch(`http://localhost:8080/home?memberName=${searchQuery}`);
       const data = await response.json();
@@ -59,9 +59,9 @@ const EditMember = () => {
         //     fixed_monthly_donation : response.fixed_monthly_donation,
         //     old_donation_balance : response.old_donation_balance
         // });
-
+console.log(response);
        // Store the members found
-      if(data.length==0){
+      if(data.length===0){
         setError('Member Not Exists');
       }
       else{
@@ -70,7 +70,7 @@ const EditMember = () => {
     } catch (error) {
       console.error('Error fetching members:', error);
     } finally {
-      setLoading(false);
+      // setLoading(false);
     }
   }
 

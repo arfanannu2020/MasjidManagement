@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const IncomeToMasjid = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   // State to hold form data
   const [formData, setFormData] = useState({
     memberId:'',

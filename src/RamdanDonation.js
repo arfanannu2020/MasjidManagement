@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const RamdanDonation = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   // State to hold form data
   const [formData, setFormData] = useState({
     memberId:'',
@@ -61,7 +61,7 @@ const RamdanDonation = () => {
       
       if (response.ok) {
         const contentType = response.headers.get("content-type");
-        let responseData;
+        // let responseData;
         // console.log('Server response:', response);
 
         if (contentType && contentType.includes("application/json")) {

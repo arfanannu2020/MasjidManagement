@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Registration.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Registration = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   // State to hold form data
   const [formData, setFormData] = useState({
     memberName: '',
@@ -17,7 +17,7 @@ const Registration = () => {
 
   // State to handle errors or success messages
   const [error, setError] = useState('');
-  const [members, setMembers] = useState([]);
+  // const [members, setMembers] = useState([]);
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -60,7 +60,7 @@ const Registration = () => {
         let responseData;
         if (contentType && contentType.includes("application/json")) {
             const result = await response.json();
-            setMembers(result);
+            // setMembers(result);
             console.log('Server response:', result);
         }
         else{

@@ -27,7 +27,7 @@ const HomePage = () => {
       const data = await response.json();
       setMembers(data);  // Store the members found
       console.log("server response",data);
-      if(data.length==0){
+      if(data.length===0){
         setError('Member Not Exists');
       }
     } catch (error) {
